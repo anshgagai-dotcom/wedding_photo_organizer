@@ -1,7 +1,12 @@
 venv/
 .venv
 __pycache__/
+.pytest_cache/
 .env
 *.pyc
 output_photos/
 reports/
+organized_photos/
+metadata/*.json
+logs/*.log
+database/*.db

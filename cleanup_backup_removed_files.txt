@@ -1,0 +1,22 @@
+Backup manifest for cleanup on 2026-06-02
+
+Planned removals (proven unused by reference scan):
+- src/main.py
+- src/ui/app.py
+- src/llm/image_classifier.py
+- src/llm/ollama_client.py
+- src/organizer/photo_organizer.py
+- src/organizer/category_router.py
+- src/utils/file_scanner.py
+- src/core/config.py
+- src/core/settings.py
+- src/config/settings.py
+- src/utils/logger.py
+
+Legacy/temporary directories planned for removal after file deletion:
+- src/ui/
+- src/core/
+
+Notes:
+- These files are either isolated legacy entrypoints or only referenced by each other.
+- No active runtime path from app.py, pipeline, or current tests imports these modules.
